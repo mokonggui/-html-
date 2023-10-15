@@ -1,0 +1,98 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1540px;
+    height: 70px;
+    top: 0px;
+    background-color: rgb(234, 247, 255);
+    overflow: hidden;
+    font-size: 20px;
+    color: rgb(84, 109, 158);
+    opacity: 0.8;
+    z-index: 1000;
+}
+.homenav{
+    animation: load2 1s linear;
+}
+
+nav:hover{
+    opacity: 0.95;
+}
+nav .navtitle{
+    padding-left: 50px;
+    width: 30%;
+}
+nav .navtitle strong{
+    font-size: 50px;
+    font-weight: bolder;
+}
+nav a{
+   display: block;
+   justify-content: center;
+   text-decoration: none;
+   z-index: 1;
+   height: inherit;
+   line-height: 70px;
+   width: 120px;
+   text-align: center;
+   font-weight: bolder;
+   color: rgb(84, 109, 158);
+   transition: 0.5s;
+}
+nav .navanim{
+    position: absolute;
+    height: inherit;
+    z-index: 0;
+    background: rgb(155, 200, 240);
+    border-radius: 5px;
+    left: 525px;
+    transition:  all .5s ease 0s;
+    width: 120px;
+}
+nav .index,a:nth-child(2):hover~.navanim{
+    width: 100px;
+    left: 525px;
+}
+
+nav .home,a:nth-child(3):hover~.navanim{
+    width: 100px;
+    left: 645px;
+}
+
+nav .about,a:nth-child(4):hover~.navanim{
+    width: 100px;
+    left: 765px;
+}
+
+nav .blog,a:nth-child(5):hover~.navanim{
+    width: 100px;
+    left: 885px;
+}
+nav .album,a:nth-child(6):hover~.navanim{
+    width: 100px;
+    left: 1005px;
+}
+nav .join,a:nth-child(7):hover~.navanim{
+    width: 100px;
+    left: 1125px;
+}
+nav .none{
+    width: 20%;
+}
+
+@keyframes load2{
+    0%{
+        top: -80px;
+        opacity: 0;
+    }100%{
+        top: 0px;
+        opacity: 0.8;
+    }
+}

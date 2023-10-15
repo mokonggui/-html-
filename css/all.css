@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'font';
+  src: url("../font/优设标题黑_猫啃网.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ffaaff; */
+   background-image: linear-gradient(to bottom, #94cef4, rgb(198, 251, 255), rgb(255, 255, 255));
+}
+
+body .shell {
+  width: 100%;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body .shell-main-footer {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  transform: translateY(100px);
+  justify-content: center;
+
+  align-items: center;
+  text-align: center;
+  background-color: rgb(234, 247, 255);
+}
+body .shell-main-footer p{
+	margin-top: 20px;
+    line-height: 10px;
+    color: rgb(28, 43, 43);
+}
